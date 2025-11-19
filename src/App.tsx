@@ -5,6 +5,7 @@ import About from "./components/Landing/About";
 import Services from "./components/Landing/Services";
 import CallToAction from "./components/Landing/CallToAction";
 import Contact from "./components/Landing/Contact";
+import Footer from "./components/Landing/Footer";
 
 const App = () => {
   return (
@@ -15,6 +16,7 @@ const App = () => {
       <Services />
       <CallToAction />
       <Contact />
+      <Footer />
     </div>
   );
 };
