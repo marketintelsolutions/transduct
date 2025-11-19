@@ -1,0 +1,31 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+@import "tailwindcss";
+*,
+body,
+::before,
+::after {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  transition: all 0.2s linear;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+@theme {
+  --font-display: "Inter Tight", "sans-serif";
+  --breakpoint-zr: 0px;
+  --breakpoint-mb: 430px;
+  --breakpoint-sm: 640px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 991px;
+  --breakpoint-xl: 1280px;
+
+  --container-max-w: 1300px;
+
+  --color-primary: rgb(94, 37, 255);
+}
