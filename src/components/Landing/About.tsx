@@ -1,5 +1,13 @@
 import React from "react";
 
+const logos = [
+  "logoblack.svg",
+  "logoblack.svg",
+  "logoblack.svg",
+  "logoblack.svg",
+  "logoblack.svg",
+];
+
 const About = () => {
   return (
     <section id="about" className="bg-white">
@@ -69,11 +77,19 @@ const About = () => {
           </div>
           <div className="bg-white">
             <img
-              src="/illustration.png"
+              src="/hospice.jpg"
               alt="illustration"
-              className="max-w-[320px] mx-auto"
+              className="w-full h-full object-cover mx-auto"
             />
           </div>
+        </div>
+      </div>
+
+      <div className="bg-primary/20 ">
+        <div className="mt-10 flex gap-14 w-full max-w-max-w mx-auto py-10">
+          {logos.map((item, index) => (
+            <img src={item} alt={item} className="w-[200px] object-contain" />
+          ))}
         </div>
       </div>
     </section>
