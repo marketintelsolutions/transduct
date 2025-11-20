@@ -2,7 +2,7 @@ import React from "react";
 
 const About = () => {
   return (
-    <section>
+    <section id="about" className="bg-white">
       <div className="w-full max-w-max-w mx-auto py-20">
         <h2 className="text-center uppercase font-semibold text-4xl">
           ABOUT US
@@ -18,14 +18,14 @@ const About = () => {
               Welcome to Transduct — Shaping the Future of Hospitality in
               Nigeria
             </h3>
-            <p>
+            <p className="text-justify">
               At Transduct, we believe hospitality is more than just service —
               it is the foundation of experiences, connections, and growth. Our
               work is dedicated to championing strategic investments and
               groundbreaking projects that elevate Nigeria’s business and
               hospitality sectors to world-class standards.
             </p>
-            <p>
+            <p className="text-justify">
               We are committed to redefining how hospitality is built,
               experienced, and sustained by creating landmark developments that
               blend innovation, cultural authenticity, and global best
@@ -35,7 +35,7 @@ const About = () => {
               to the growth of the industry but also to the advancement of
               communities and the Nigerian economy at large. */}
             </p>
-            <p>
+            <p className="text-justify">
               From hotels and resorts to tourism and lifestyle developments,
               Transduct is at the forefront of creating destinations that
               inspire, delight, and endure. Our vision is clear: to stand as the
@@ -50,7 +50,7 @@ const About = () => {
         </div>
 
         <div className="mt-20 bg-gray-200 w-fit p-px grid grid-cols-3 gap-px">
-          <div className="bg-white max-w-[500px] p-5 flex flex-col gap-4">
+          <div className="bg-white max-w-[500px] p-5 flex flex-col gap-8">
             <span className="text-3xl text-primary">01</span>
             <h4 className="text-3xl font-medium">Mission</h4>
             <p className="text-base font-light text-black/80">
@@ -58,7 +58,7 @@ const About = () => {
               standards in Nigeria’s business and hospitality sectors.
             </p>
           </div>
-          <div className="bg-white max-w-[500px] p-5 flex flex-col gap-4">
+          <div className="bg-white max-w-[500px] p-5 flex flex-col gap-8">
             <span className="text-3xl text-primary">02</span>
             <h4 className="text-3xl font-medium">Vision</h4>
             <p className="text-base font-light text-black/80">
@@ -67,7 +67,13 @@ const About = () => {
               sector
             </p>
           </div>
-          <div className="bg-white"></div>
+          <div className="bg-white">
+            <img
+              src="/illustration.png"
+              alt="illustration"
+              className="max-w-[320px] mx-auto"
+            />
+          </div>
         </div>
       </div>
     </section>

@@ -5,7 +5,7 @@ import { IoMailOutline } from "react-icons/io5";
 
 const Contact = () => {
   return (
-    <section>
+    <section id="contact" className="bg-white relative z-2">
       <div className="w-full max-w-max-w mx-auto py-20 ">
         <h2 className="text-center uppercase font-semibold text-4xl">
           CONTACT
@@ -75,7 +75,7 @@ const Contact = () => {
                 className="py-3 px-2 placeholder:text-black/30 border border-gray-200 w-full mt-6 h-40"
               ></textarea>
               <div className="flex justify-center">
-                <button className="bg-primary py-3 px-5 text-white mt-8">
+                <button className="bg-primary py-3 px-5 text-white mt-8 hover:text-primary hover:bg-white hover:border-primary border cursor-pointer">
                   Send Message
                 </button>
               </div>

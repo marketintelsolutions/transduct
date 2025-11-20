@@ -40,11 +40,21 @@ const services = [
     text:
       "Providing expert advice on various aspects, such as technology upgrades, strategic planning, and operational problems.",
   },
+  {
+    icon: "note",
+    heading: "Financial management",
+    text: "Handling budgeting, forecasting, accounting, and reporting.",
+  },
+  {
+    icon: "asset",
+    heading: "Asset management",
+    text: "Optimizing the management and performance of the hotel's assets.",
+  },
 ];
 
 const Services = () => {
   return (
-    <section>
+    <section id="services" className="bg-white">
       <div className="w-full max-w-max-w mx-auto py-20">
         <h2 className="text-center uppercase font-semibold text-4xl">
           SERVICES
@@ -57,7 +67,7 @@ const Services = () => {
         <div className="grid grid-cols-3 gap-5 mt-14">
           {services.map((item, index) => (
             <div
-              className="flex hover:bg-black/30 cursor-pointer flex-col border border-gray-200 px-6 py-14 items-center text-center"
+              className="flex hover:border-2 hover:border-primary hover:shadow-[0px_2px_25px_15px_rgba(0,0,0,0.05)] cursor-pointer flex-col border border-gray-200 px-6 py-14 items-center text-center"
               key={index}
             >
               <span>
