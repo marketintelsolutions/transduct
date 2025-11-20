@@ -9,7 +9,20 @@ import Footer from "./components/Landing/Footer";
 
 const App = () => {
   return (
-    <div className="">
+    <div
+      id="home"
+      className=""
+      // style={{
+      //   backgroundImage: "url(hero.jpg)",
+      //   backgroundRepeat: "no-repeat",
+      //   backgroundSize: "cover",
+      // }}
+    >
+      <img
+        src="/hero.jpg"
+        alt="hero"
+        className="fixed top-0 left-0 w-full h-full z-[-1]"
+      />
       <Navbar />
       <Banner />
       <About />

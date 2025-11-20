@@ -22,18 +22,18 @@ const links = [
 
 const Navbar = () => {
   return (
-    <nav className=" text-black">
-      <div className="bg-primary">
+    <>
+      <div className="bg-[#242424] text-white">
         <div className="w-full max-w-max-w mx-auto py-5">
           <div className="flex gap-20 items-center">
             <div className="flex gap-2 items-center">
-              <span>
+              <span className="text-primary">
                 <CiMail />
               </span>
               <span>contact@example.com</span>
             </div>
             <div className="flex gap-2 items-center">
-              <span>
+              <span className="text-primary">
                 <CiMobile1 />
               </span>
               <span>+1 5589 55488 55</span>
@@ -42,7 +42,7 @@ const Navbar = () => {
         </div>
       </div>
 
-      <div className="bg-black/80">
+      <nav className="sticky top-0 left-0 z-9999 text-white bg-[#313030]">
         <div className="w-full max-w-max-w  mx-auto h-[70px] flex justify-between items-center ">
           <div className="py-4">
             <img src="/logo.svg" alt="" className="max-w-[220px]" />
@@ -58,8 +58,8 @@ const Navbar = () => {
             ))}
           </div>
         </div>
-      </div>
-    </nav>
+      </nav>
+    </>
   );
 };
 

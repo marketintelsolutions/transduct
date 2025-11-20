@@ -79,7 +79,9 @@ const Footer = () => {
             <h4 className="font-semibold text-lg">{link.heading}</h4>
             <div className="flex mt-6 flex-col gap-5">
               {link.items.map((linkitem) => (
-                <p className="text-sm font-light">{linkitem.text}</p>
+                <a href={linkitem.path} className="text-sm font-light">
+                  {linkitem.text}
+                </a>
               ))}
             </div>
           </div>
@@ -96,7 +98,7 @@ const Footer = () => {
               type="text"
               className="w-full border-y border-l border-white py-3 px-2"
             />
-            <button className="px-4 py-3 bg-primary border border-primary text-white">
+            <button className="px-4 py-3 bg-primary border hover:bg-white hover:text-primary cursor-pointer border-primary text-white">
               Subscribe
             </button>
           </div>
