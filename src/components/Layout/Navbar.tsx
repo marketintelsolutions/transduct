@@ -30,13 +30,13 @@ const Navbar = () => {
               <span className="text-primary">
                 <CiMail />
               </span>
-              <span>contact@example.com</span>
+              <span>info@transductltd.com</span>
             </div>
             <div className="flex gap-2 items-center">
               <span className="text-primary">
                 <CiMobile1 />
               </span>
-              <span>+1 5589 55488 55</span>
+              <span>01 - 2716899</span>
             </div>
           </div>
         </div>
