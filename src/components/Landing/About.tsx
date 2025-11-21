@@ -5,7 +5,7 @@ const logos = [
   "logoblack.svg",
   "logoblack.svg",
   "logoblack.svg",
-  "logoblack.svg",
+  // "logoblack.svg",
 ];
 
 const About = () => {
@@ -86,7 +86,7 @@ const About = () => {
       </div>
 
       <div className="bg-primary/20 ">
-        <div className="mt-10 flex gap-14 w-full max-w-max-w mx-auto py-10">
+        <div className="mt-10 flex justify-center gap-20 w-full max-w-max-w mx-auto py-10">
           {logos.map((item, index) => (
             <img src={item} alt={item} className="w-[200px] object-contain" />
           ))}
