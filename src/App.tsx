@@ -6,6 +6,7 @@ import Services from "./components/Landing/Services";
 import CallToAction from "./components/Landing/CallToAction";
 import Contact from "./components/Landing/Contact";
 import Footer from "./components/Landing/Footer";
+import Products from "./components/Landing/Products";
 
 const App = () => {
   return (
@@ -28,6 +29,7 @@ const App = () => {
       <About />
       <Services />
       <CallToAction />
+      <Products />
       <Contact />
       <Footer />
     </div>
