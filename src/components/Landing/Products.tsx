@@ -13,7 +13,7 @@ const Products = () => {
 
         <div className="flex mt-12 gap-14 justify-between ">
           <div className="w-full max-w-[50%]">
-            <img src="/about.jpg" alt="about" className="w-full object-cover" />
+            <img src="/hotel.jpg" alt="hotel" className="w-full object-cover" />
           </div>
           <div className="w-full max-w-[45%] flex flex-col font-light text-lg leading-[35px] gap-5">
             <h3 className="font-semibold text-xl">
