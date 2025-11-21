@@ -8,8 +8,7 @@ const Products = () => {
           PRODUCTS
         </h2>
         <p className="text-xl font-light text-center mt-5">
-          We are committed to redefining how hospitality is built, experienced,
-          and sustained
+          Through transformative partnerships, we set benchmarks for excellence
         </p>
 
         <div className="flex mt-12 gap-14 justify-between ">
