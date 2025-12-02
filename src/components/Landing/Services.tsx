@@ -1,50 +1,50 @@
 import React from "react";
 
 const services = [
-  {
-    icon: "daily",
-    heading: "Operations Management",
-    text:
-      "Overseeing daily hotel operations to improve efficiency and guest experience.",
-  },
+  // {
+  //   icon: "daily",
+  //   heading: "Operations Management",
+  //   text:
+  //     "Overseeing daily hotel operations to improve efficiency and guest experience.",
+  // },
   {
     icon: "previous",
     heading: "Pre-Opening Services",
     text: "Managing the planning and setup of a new hotel before it opens.",
   },
-  {
-    icon: "revenue",
-    heading: "Revenue Management",
-    text: "Developing strategies to optimize pricing, inventory, and revenue.",
-  },
+  // {
+  //   icon: "revenue",
+  //   heading: "Revenue Management",
+  //   text: "Developing strategies to optimize pricing, inventory, and revenue.",
+  // },
   {
     icon: "attract",
     heading: "Sales and Marketing",
     text:
       "Creating and implementing marketing and sales strategies to attract guests.",
   },
-  {
-    icon: "analysis",
-    heading: "Feasibility Studies",
-    text:
-      "Conducting market and financial analysis for new hotel projects or acquisitions.",
-  },
-  {
-    icon: "manage",
-    heading: "Brand Management",
-    text: "Building and maintaining the hotel's brand identity and reputation.",
-  },
+  // {
+  //   icon: "analysis",
+  //   heading: "Feasibility Studies",
+  //   text:
+  //     "Conducting market and financial analysis for new hotel projects or acquisitions.",
+  // },
+  // {
+  //   icon: "manage",
+  //   heading: "Brand Management",
+  //   text: "Building and maintaining the hotel's brand identity and reputation.",
+  // },
   {
     icon: "consult",
     heading: "Consulting",
     text:
       "Providing expert advice on various aspects, such as technology upgrades, strategic planning, and operational problems.",
   },
-  {
-    icon: "note",
-    heading: "Financial management",
-    text: "Handling budgeting, forecasting, accounting, and reporting.",
-  },
+  // {
+  //   icon: "note",
+  //   heading: "Financial management",
+  //   text: "Handling budgeting, forecasting, accounting, and reporting.",
+  // },
   {
     icon: "asset",
     heading: "Asset management",
@@ -64,7 +64,7 @@ const Services = () => {
           groundbreaking projects
         </p>
 
-        <div className="grid grid-cols-3 gap-5 mt-14">
+        <div className="grid grid-cols-2 gap-5 mt-14">
           {services.map((item, index) => (
             <div
               className="flex hover:border-2 hover:border-primary hover:shadow-[0px_2px_25px_15px_rgba(0,0,0,0.05)] cursor-pointer flex-col border border-gray-200 px-6 py-14 items-center text-center"
