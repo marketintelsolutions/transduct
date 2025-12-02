@@ -77,8 +77,8 @@ const About = () => {
           </div>
           <div className="bg-white">
             <img
-              src="/hospice.jpg"
-              alt="illustration"
+              src="/vision.jpg"
+              alt="vision"
               className="w-full h-full object-cover mx-auto"
             />
           </div>
