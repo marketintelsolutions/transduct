@@ -25,32 +25,32 @@ const links = [
   {
     heading: "Our Services",
     items: [
-      {
-        text: "Operations management",
-        path: "#services",
-      },
+      // {
+      //   text: "Operations management",
+      //   path: "#services",
+      // },
       {
         text: "Pre-Opening Services",
         path: "#services",
       },
-      {
-        text: "Revenue Management",
-        path: "#services",
-      },
+      // {
+      //   text: "Revenue Management",
+      //   path: "#services",
+      // },
       {
         text: "Sales and Marketing",
         path: "#services",
       },
-      {
-        text: "Feasibility Studies",
-        path: "#services",
-      },
-      {
-        text: "Brand Management",
-        path: "#services",
-      },
+      // {
+      //   text: "Feasibility Studies",
+      //   path: "#services",
+      // },
       {
         text: "Consulting",
+        path: "#services",
+      },
+      {
+        text: "Asset Management",
         path: "#services",
       },
     ],
@@ -67,7 +67,7 @@ const Footer = () => {
           </p>
           <p className="text-sm font-light">
             <span className="font-semibold">Phone: </span>
-            01 - 2716899
+            07026679881
           </p>
           <p className="text-sm font-light">
             <span className="font-semibold">Email: </span>
@@ -106,7 +106,7 @@ const Footer = () => {
       </div>
 
       <div className="border-t-[0.5px] w-full max-w-max-w mx-auto border-gray-100 mt-14 pt-10">
-        <p className="text-center">© Copyright Transduct All Rights Reserved</p>
+        <p className="text-center">© 2025 | Transduct | All Rights Reserved</p>
       </div>
     </footer>
   );

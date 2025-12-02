@@ -36,7 +36,7 @@ const Navbar = () => {
               <span className="text-primary">
                 <CiMobile1 />
               </span>
-              <span>01 - 2716899</span>
+              <span>07026679881</span>
             </div>
           </div>
         </div>

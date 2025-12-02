@@ -42,7 +42,7 @@ const Contact = () => {
                   <BsTelephone />
                 </span>
                 <h3 className="font-semibold text-2xl">Call Us</h3>
-                <p className="font-light">01 - 2716899</p>
+                <p className="font-light">07026679881</p>
               </div>
               <div className="w-full shadow-[0px_2px_25px_15px_rgba(0,0,0,0.05)] py-8 flex flex-col gap-3 items-center justify-center">
                 <span className="inline-flex border-dashed border rounded-full p-3 border-primary text-primary text-4xl">

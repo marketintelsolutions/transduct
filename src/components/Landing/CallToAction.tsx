@@ -15,9 +15,9 @@ const CallToAction = () => {
         <div className=" flex justify-center items-center flex-col gap-8 text-white w-full h-full">
           <h3 className="text-4xl font-semibold">Call To Action</h3>
           <p className="max-w-[1000px] text-center text-lg">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere
-            laborum porro totam recusandae modi quibusdam ab adipisci
-            consequatur libero praesentium?
+            At Transduct, our effective hotel management blends with hospitality, 
+            leadership, and strategic planning to create exceptional guest experiences 
+            and drive business success.
           </p>
           <button className="py-4 px-10 border border-white hover:bg-primary hover:border-primary cursor-pointer">
             Learn More
