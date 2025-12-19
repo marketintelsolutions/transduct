@@ -1,22 +1,132 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
+
+const imageCarousel = [
+  "hotel.jpg",
+  "image2.jpeg",
+  "image3.jpeg",
+  "image4.jpeg",
+  "image5.jpeg",
+];
 
 const Products = () => {
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+  const [isPaused, setIsPaused] = useState(false);
+
+  useEffect(() => {
+    if (!isPaused) {
+      const interval = setInterval(() => {
+        setCurrentImageIndex((prevIndex) =>
+          prevIndex === imageCarousel.length - 1 ? 0 : prevIndex + 1
+        );
+      }, 3000); // Auto-scroll every 3 seconds
+
+      return () => clearInterval(interval);
+    }
+  }, [isPaused]);
+
+  const nextImage = () => {
+    setCurrentImageIndex((prevIndex) =>
+      prevIndex === imageCarousel.length - 1 ? 0 : prevIndex + 1
+    );
+  };
+
+  const prevImage = () => {
+    setCurrentImageIndex((prevIndex) =>
+      prevIndex === 0 ? imageCarousel.length - 1 : prevIndex - 1
+    );
+  };
+
+  const goToImage = (index: number) => {
+    setCurrentImageIndex(index);
+  };
+
   return (
     <section id="services" className="bg-white">
       <div className="w-full max-w-max-w mx-auto py-20">
         <h2 className="text-center uppercase font-semibold text-4xl">
           PRODUCTS
         </h2>
+        <h3 className="text-2xl font-semibold text-center mt-10">
+          Hotel Presidential Enugu, Nigeria
+        </h3>
         <p className="text-xl font-light text-center mt-5">
           Through transformative partnerships, we set benchmarks for excellence
         </p>
+        <div className="flex mt-12 gap-14 justify-between">
+          <div
+            className="w-full max-w-[50%] relative"
+            onMouseEnter={() => setIsPaused(true)}
+            onMouseLeave={() => setIsPaused(false)}
+          >
+            <img
+              src={`/${imageCarousel[currentImageIndex]}`}
+              alt={`hotel ${currentImageIndex + 1}`}
+              className="w-full object-cover rounded-lg"
+            />
 
-        <div className="flex mt-12 gap-14 justify-between ">
-          <div className="w-full max-w-[50%]">
-            <img src="/hotel.jpg" alt="hotel" className="w-full object-cover" />
+            {/* Previous Button */}
+            <button
+              onClick={prevImage}
+              className="absolute left-4 top-1/2 -translate-y-1/2 bg-black/50 hover:bg-black/70 text-white p-3 rounded-full transition-all"
+              aria-label="Previous image"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                strokeWidth={2}
+                stroke="currentColor"
+                className="w-6 h-6"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M15.75 19.5L8.25 12l7.5-7.5"
+                />
+              </svg>
+            </button>
+
+            {/* Next Button */}
+            <button
+              onClick={nextImage}
+              className="absolute right-4 top-1/2 -translate-y-1/2 bg-black/50 hover:bg-black/70 text-white p-3 rounded-full transition-all"
+              aria-label="Next image"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                strokeWidth={2}
+                stroke="currentColor"
+                className="w-6 h-6"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M8.25 4.5l7.5 7.5-7.5 7.5"
+                />
+              </svg>
+            </button>
+
+            {/* Dot Indicators */}
+            <div className="absolute bottom-4 left-1/2 -translate-x-1/2 flex gap-2">
+              {imageCarousel.map((_, index) => (
+                <button
+                  key={index}
+                  onClick={() => goToImage(index)}
+                  className={`w-3 h-3 rounded-full transition-all ${
+                    index === currentImageIndex
+                      ? "bg-white w-8"
+                      : "bg-white/50 hover:bg-white/75"
+                  }`}
+                  aria-label={`Go to image ${index + 1}`}
+                />
+              ))}
+            </div>
           </div>
+
           <div className="w-full max-w-[45%] flex flex-col font-light text-lg leading-[35px] gap-5">
-            <h3 className="font-semibold text-xl">
+            <h3 className="font-medium text-xl">
               About Hotel Presidential Enugu, Nigeria
             </h3>
             <p className="text-justify">
