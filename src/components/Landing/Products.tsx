@@ -132,12 +132,12 @@ const Products = () => {
               lovingly restored to its former glory. Originally built in 1963
               under the leadership of Dr. Michael Okpara, the hotel lay
               abandoned for around 15 years before being rebuilt and
-              re-commissioned in 2025 under the administration of Governor Peter
-              Mbah.
+              re-commissioned in 2025 Under the administration of His Excellency 
+              Governor Peter Mbah
             </p>
             <p className="text-justify">
               Operated by Transduct Limited, the renovated Hotel Presidential
-              blends heritage with modern luxury. With around 100 rooms, the
+              blends heritage with modern luxury. With about 100 rooms, the
               property now features contemporary designs, reliable power and
               water supply, world-class conference and event facilities, and
               upgraded culinary experiences.
